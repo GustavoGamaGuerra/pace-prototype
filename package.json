@@ -1,0 +1,12 @@
+{
+  "name": "pace-prototype",
+  "private": true,
+  "description": "Pace coded prototype. No build step: open index.html. Dev dependencies are only for Figma Code Connect.",
+  "scripts": {
+    "connect:parse": "figma connect parse",
+    "connect:publish": "figma connect publish"
+  },
+  "devDependencies": {
+    "@figma/code-connect": "2.1.0"
+  }
+}

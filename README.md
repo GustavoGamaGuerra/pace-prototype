@@ -54,12 +54,21 @@ Built to WCAG 2.2 AA, matching the design system's accessibility notes:
 - The trade-off choice is a radio group. Errors pair colour with an icon and text, and blocked actions explain why.
 - `prefers-reduced-motion` turns off sheet and spinner animation.
 
+## Design-to-code handoff
+
+- **[HANDOFF.md](HANDOFF.md):** every Figma component mapped to its code (classes, render helpers, property → markup rules, tokens, accessibility).
+- **[code-connect/Button.figma.ts](code-connect/Button.figma.ts):** a Figma Code Connect v2 template for the Button set. It's validated with `figma connect parse`, and publishing it needs a Figma Organization or Enterprise plan.
+
 ## Files
 
 ```
-index.html   page shell, icon sprite, live region
-styles.css   design tokens (same names as the Figma variables) and components
-app.js       data and maths, state, screens, sheets, scripted Ask Pace
+index.html               page shell, icon sprite, live region
+styles.css               design tokens (same names as the Figma variables) and components
+app.js                   data and maths, state, screens, sheets, scripted Ask Pace
+HANDOFF.md               component-to-code mapping
+code-connect/            Figma Code Connect template (Button)
+figma.config.json        Code Connect config
+package.json             dev dependency for Code Connect only (the site needs no build)
 ```
 
 Typeface: Inter, loaded from Google Fonts. Icons: Lucide-style, inlined as an SVG sprite.
