@@ -182,7 +182,7 @@ h1, h2, h3, p { margin: 0; }
 .composer .caption { text-align: center; color: var(--color-text-secondary); }
 
 /* ---------- Chat ---------- */
-.msg-user { align-self: flex-end; max-width: 302px; background: var(--color-bg-brand); color: var(--color-text-on-brand); padding: var(--space-4); border-radius: 12px 4px 4px 12px; }
+.msg-user { align-self: flex-end; max-width: 302px; background: var(--color-bg-brand); color: var(--color-text-on-brand); padding: var(--space-4); border-radius: 12px 12px 4px 12px; }
 .msg-ai { display: flex; flex-direction: column; gap: var(--space-3); }
 .msg-ai p + p { margin-top: var(--space-4); }
 .ai-label { display: flex; align-items: center; gap: var(--space-2); font-size: 12px; line-height: 16px; font-weight: 600; letter-spacing: 0.06em; color: var(--color-text-brand); }
